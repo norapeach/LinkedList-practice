@@ -18,9 +18,20 @@ public class LinkedIntList implements IntList {
     
     public boolean isSorted() {
     	boolean sorted = true;
+    	if (front == null) { 
+    		 return sorted;
+    	} else {
+    		ListNode current = front;
+    		
+    		// robust condition first; specific 2nd: at start of loop compares
+    		
+    		while (current.next != null && current.data < current.next.data) { 
+    			current = current.next; // post: list to this point is sorted 
+    		}
+    		
+    	}
     	
     	
-    	return sorted;
     }
     
     /**
