@@ -3,7 +3,9 @@
  */
 
 /***************************************************************************
- * METHOD START LINE 78 BJP5 Exercise 16.3: Method isSorted 
+ * BJP5 Exercise 16.3: Method isSorted 
+ * FIRST METHOD defined in LinkedIntList.java
+ * JUnit test: JTestIsSorted.java 
  * 
  * REQUIREMENTS
  * - This method has been added to the LinkedIntList class defined in Ch6

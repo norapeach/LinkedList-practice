@@ -4,7 +4,8 @@ import static org.junit.Assert.*;
 import org.junit.jupiter.api.Test;
 
 /**
- * ONLY tests the method isSorted() of the LinkedIntList class 
+ * ONLY tests the method isSorted() of the LinkedIntList class
+ * 
  * @author Nora P.
  * @version 6/13/20
  */
@@ -18,22 +19,20 @@ class JTestIsSorted {
 		testl.add(93);
 		testl.add(212);
 		boolean sorted = testl.isSorted();
-		
+
 		assertTrue(sorted);
-		
-		
-		
+
 	}
-	
+
 	@Test
 	void testIsEmpty() {
 		LinkedIntList testl = new LinkedIntList();
 		boolean sorted = testl.isSorted();
-		
-		assertTrue(sorted);	
-		
+
+		assertTrue(sorted);
+
 	}
-	
+
 	@Test
 	void testNotSorted() {
 		LinkedIntList testl = new LinkedIntList();
@@ -45,7 +44,7 @@ class JTestIsSorted {
 		assertTrue(sorted);
 		testl.set(0, 35);
 		sorted = testl.isSorted();
-		assertFalse(sorted);	
-	}	
+		assertFalse(sorted);
+	}
 
 }

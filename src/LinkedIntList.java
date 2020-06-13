@@ -7,7 +7,7 @@
 import java.util.NoSuchElementException;
 
 /**
- * Class LinkedIntList can be used to store a list of integers.
+ * Class LinkedIntList can be used to store a list of integers. Line
  * 
  * @see http://www.buildingjavaprograms.com/code-files/5ed/ch16/LinkedIntList2.java
  */
@@ -19,6 +19,13 @@ public class LinkedIntList implements IntList {
 		front = null;
 	}
 
+	/**
+	 * ASSIGNMENT 8 METHOD
+	 * 
+	 * @author Nora P.
+	 * @version 6/13/20
+	 * @return true if the List is in sorted (nondecreasing) sequence
+	 */
 	public boolean isSorted() {
 		boolean sorted = true;
 		if (front == null) {
