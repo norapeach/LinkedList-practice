@@ -39,7 +39,7 @@ public class IsSortedChecker {
         list1.add(2);
         list1.set(1, 3);
         
-        System.out.println("The List has been modified.");
+        System.out.println("The List has been modified >>> " + list1);
         System.out.println("isSorted >>> " + list1.isSorted());
 	}
 
