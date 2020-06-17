@@ -36,13 +36,12 @@ public class LinkedIntList implements IntList {
 				if (current.data <= current.next.data) {
 					current = current.next;
 				} else {
-					sorted = false;
-					break; // breaks out of while to return false?
+					return sorted = false;
 				} // end inner if/else
 			} // end while
+			return sorted;
 		} // end if/else
-
-		return sorted;
+		
 	} // end isSorted
 
 	/*
